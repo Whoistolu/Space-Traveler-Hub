@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Routes,
+  Switch,
   Route,
 } from 'react-router-dom';
 import Header from './components/header';
@@ -12,14 +12,14 @@ function App() {
     <>
 
       <Header />
-      <Routes>
+      <Switch>
         <Route exact path="/">
           <Rockets />
         </Route>
         <Route path="/myProfile">
           <MyProfile />
         </Route>
-      </Routes>
+      </Switch>
 
     </>
   );
