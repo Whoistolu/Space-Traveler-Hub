@@ -2,8 +2,12 @@ import React from 'react';
 
 const MyProfile = () => (
   <div>
-    <p>Rockets</p>
+    <div>
+      <p>Missions</p>
+    </div>
+    <div>
+      <p>Rockets</p>
+    </div>
   </div>
 );
-
 export default MyProfile;
