@@ -27,8 +27,9 @@ export const LeaveMissions = (payload) => (
 
 const missionReducer = (state = initialState, action) => {
   switch (action.type) {
-    case GET_MISSIONS:
-      return ({ state: action.payload });
+    case GET_MISSIONS: {
+      return [...state, ...action.payload];
+    }
     case JOIN_MISSIONS:
       return ({ state: action.payload });
     case LEAVE_MISSIONS:

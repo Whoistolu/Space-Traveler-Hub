@@ -6,6 +6,7 @@ import {
 import Header from './components/header';
 import MyProfile from './components/my_Profile';
 import Rockets from './components/rockets';
+import Missions from './components/missions';
 
 function App() {
   return (
@@ -19,9 +20,9 @@ function App() {
         <Route path="/myProfile">
           <MyProfile />
         </Route>
-        {/* <Route path="/missions">
+        <Route path="/mission">
           <Missions />
-        </Route> */}
+        </Route>
       </Switch>
 
     </>
