@@ -1,15 +1,17 @@
 import fetchApiRockets from '../../components/rocketsApi';
 
 const GET_ROCKETS = 'nasa_projects/rockets/GET_ROCKETS';
+// const RESERVE_ROCKETS = 'nasa_projects/rockets/RESERVE_ROCKETS';
+// const CANCEL_ROCKETS = 'nasa_projects/rockets//CANCEL_ROCKETS';
 const initialState = [];
 
 export const getRockets = () => async (dispatch) => {
   const theRockets = await fetchApiRockets();
   const mappedData = theRockets.map((rocket) => ({
     id: rocket.rocket_id,
-    rocket_name: rocket.rocket_name,
+    rocketName: rocket.rocket_name,
     description: rocket.description,
-    flickr_images: rocket.flickr_images[0],
+    flickrImages: rocket.flickr_images[0],
   }));
 
   dispatch(
