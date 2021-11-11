@@ -14,12 +14,18 @@ const Mission = ({ mission }) => {
     dispatch(joinMissions(id));
   };
 
+  const memberStyle = {
+    backgroundColor: '#000',
+    fontSize: '16px',
+    color: 'red',
+  };
+
   return (
     <tr key={id}>
       <th>{name}</th>
       <td>{description}</td>
       <td>
-        <p className="member_status">
+        <p className="member_status" style={join ? memberStyle : null}>
           {join ? 'Active Member' : 'Join Mission'}
         </p>
       </td>
