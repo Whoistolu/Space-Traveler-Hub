@@ -1,11 +1,22 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
+import { cancelRockets, reserveRockets } from '../redux/rockets/rockets';
 
 const SingleRocket = (prop) => {
-  const { rockets } = useSelector((state) => state);
+  const dispatch = useDispatch();
   const { data } = prop;
-  const { description, flickrImages, rocketName } = data;
-  console.log(rockets);
+  const {
+    description, flickrImages, rocketName, reserved, id,
+  } = data;
+  const status = reserved ? 'Cancel Reservation' : 'Reserve Rocket';
+  const rocketBadge = reserved ? 'Reserved' : '';
+  const reservedRocketStatus = (id) => {
+    if (reserved) {
+      dispatch(cancelRockets(id));
+    } else {
+      dispatch(reserveRockets(id));
+    }
+  };
   return (
     <>
       <span>
@@ -13,12 +24,14 @@ const SingleRocket = (prop) => {
                 description
               }
       </span>
-      <img src={flickrImages} alt="rocket name" />
+      <div className="img-container"><img src={flickrImages} alt="rocket name" /></div>
       <h2>
         {
                 rocketName
               }
       </h2>
+      <button onClick={() => reservedRocketStatus(id)} type="button">{status}</button>
+      <span>{rocketBadge}</span>
     </>
   );
 };
