@@ -4,26 +4,27 @@ import { Link } from 'react-router-dom';
 function Header() {
   return (
     <header>
-      <div>
-        <img id="logo" src="https://cdn-icons-png.flaticon.com/512/3212/3212608.png" alt="" />
-        <h1>Space Travelers</h1>
-      </div>
-      <nav>
-        <div>
-          <ul>
-            <li>
-              <Link to="/" className="navLink">Rockets</Link>
-
-            </li>
-            <li>
-              <Link to="/myProfile" className="navLink"> My Profile</Link>
-            </li>
-            <li>
-              <Link to="/mission" className="navLink"> Missions</Link>
-            </li>
-          </ul>
+      <div className="header-container">
+        <div className="img-h1">
+          <img className="logo" id="logo" src="https://cdn-icons-png.flaticon.com/512/3212/3212608.png" alt="" />
+          <h1><Link to="/">Space Travelers&lsquo; Hub</Link></h1>
         </div>
-      </nav>
+        <nav>
+          <div className="links">
+            <ul>
+              <li>
+                <Link to="/" activeClassName="active">Rockets</Link>
+              </li>
+              <li>
+                <Link to="/mission" activeClassName="active"> Missions</Link>
+              </li>
+              <li>
+                <Link to="/myProfile" activeClassName="active"> My Profile</Link>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
   );
 }

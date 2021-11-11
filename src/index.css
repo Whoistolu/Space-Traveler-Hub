@@ -1,13 +1,73 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2.5rem;
+  border-bottom: rgb(172, 168, 168) solid 1px;
+}
+
+.img-h1 {
+  display: flex;
+  gap: 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  width: 7%;
+}
+
+h1 {
+  display: flex;
+  justify-self: center;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+h1 a {
+  text-decoration: none;
+}
+
+.rocket-name {
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  text-decoration: none;
+}
+
+li {
+  padding: 0 1rem;
+  font-size: 1.3rem;
+  list-style-type: none;
+  color: rgb(22, 61, 238);
+}
+
+li a {
+  text-decoration: none;
+}
+
+.img-container {
+  width: 10%;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.all {
+  display: flex;
+  gap: 3rem;
+}
+
+.description {
+  padding-top: 1rem;
 }

@@ -19,19 +19,23 @@ const SingleRocket = (prop) => {
   };
   return (
     <>
-      <span>
-        {
-                description
-              }
-      </span>
-      <div className="img-container"><img src={flickrImages} alt="rocket name" /></div>
-      <h2>
-        {
+      <div className="all">
+        <img className="img-container" src={flickrImages} alt="rocket name" />
+        <div className="description">
+          <h2 className="rocket-name">
+            {
                 rocketName
               }
-      </h2>
-      <button onClick={() => reservedRocketStatus(id)} type="button">{status}</button>
-      <span>{rocketBadge}</span>
+          </h2>
+          <span>{rocketBadge}</span>
+          <span className="rocket-description">
+            {
+                description
+              }
+          </span>
+          <button onClick={() => reservedRocketStatus(id)} type="button">{status}</button>
+        </div>
+      </div>
     </>
   );
 };
