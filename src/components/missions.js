@@ -1,17 +1,19 @@
+/* eslint-disable no-console */
+/* eslint-disable jsx-a11y/control-has-associated-label */
 /* eslint-disable consistent-return */
-import React, { useEffect } from 'react';
+// import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import axios from 'axios';
-import Mission from './mission';
+// import Mission from './mission';
 import { getMissions } from '../redux/missions/missionReducer';
 
-const Missions = () => {
-  const missions = useSelector((state) => state.missionReducer);
+function Missions() {
+  const state = useSelector((state) => state.missionReducer);
   const dispatch = useDispatch();
-  console.log(missions);
+  console.log(state, 'initial');
 
   const allMissions = async () => {
-    const missions = await axios
+    const req = await axios
       .get('https://api.spacexdata.com/v3/missions?limit=10')
       .then((response) => {
         const data = response.data.map((item) => ({
@@ -22,28 +24,36 @@ const Missions = () => {
         }));
         return data;
       });
-    dispatch(getMissions(missions));
+    dispatch(getMissions(req));
   };
-
-  useEffect(() => {
-    if (missions.length === 0) {
-      allMissions();
-    }
-  }, []);
-
+  const data = allMissions();
+  console.log(data);
   return (
-    <table>
-      <tr>
-        <th>Mission</th>
-        <th>description</th>
-        <th>Status</th>
-        <th>{ }</th>
-      </tr>
-      {missions.map((mission) => (
-        <Mission key={mission.id} mission={mission} />
-      ))}
-    </table>
+    <h2>
+      Hello world
+    </h2>
   );
-};
+  //   useEffect(() => {
+  //     if (state.length > 0) {
+  //       allMissions();
+  //     }
+  //   }, []);
+
+//   return (
+//     <table>
+//       <tbody>
+//         <tr>
+//           <th>Mission</th>
+//           <th>description</th>
+//           <th>Status</th>
+//           <th />
+//         </tr>
+//         {state.map((mission) => (
+//           <Mission key={mission.id} mission={mission} />
+//         ))}
+//       </tbody>
+//     </table>
+//   );
+}
 
 export default Missions;

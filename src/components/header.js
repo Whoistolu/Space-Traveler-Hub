@@ -19,7 +19,7 @@ function Header() {
               <NavLink to="/myProfile" className="navLink"> My Profile</NavLink>
             </li>
             <li>
-              <NavLink to="/mission" className="navLink"> Missions</NavLink>
+              <NavLink to="/missions" className="navLink"> Missions</NavLink>
             </li>
           </ul>
         </div>
