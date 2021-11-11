@@ -19,12 +19,12 @@ const Mission = ({ mission }) => {
       <th>{name}</th>
       <td>{description}</td>
       <td>
-        <p>
+        <p className="member_status">
           {join ? 'Active Member' : 'Join Mission'}
         </p>
       </td>
       <td>
-        <button type="button" onClick={handleClick}>
+        <button type="button" className={join ? 'leave-button' : 'join-button'} onClick={handleClick}>
           {join ? 'Leave mission' : 'Join Mission'}
         </button>
       </td>
