@@ -27,7 +27,7 @@ const SingleRocket = (prop) => {
                 rocketName
               }
           </h2>
-          <span>{rocketBadge}</span>
+          <span className="reserved">{rocketBadge}</span>
           <span className="rocket-description">
             {
                 description

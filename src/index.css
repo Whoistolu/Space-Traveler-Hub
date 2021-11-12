@@ -7,9 +7,14 @@
 .header-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 1rem 2.5rem;
   border-bottom: rgb(172, 168, 168) solid 1px;
+}
+
+.all {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
 }
 
 .img-h1 {
@@ -49,6 +54,7 @@ li {
   font-size: 1.3rem;
   list-style-type: none;
   color: rgb(22, 61, 238);
+  margin-top: 0.5rem;
 }
 
 li a {
@@ -57,17 +63,43 @@ li a {
 
 .img-container {
   width: 10%;
+  padding-top: 2rem;
 }
 
 .active {
   text-decoration: underline;
 }
 
-.all {
+.description {
   display: flex;
-  gap: 3rem;
+  flex-direction: column;
+  padding-top: 2rem;
+  width: 60%;
+  gap: 0.8rem;
 }
 
-.description {
-  padding-top: 1rem;
+button {
+  padding: 0.6rem;
+  color: #fff;
+  background-color: blue;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  width: 14%;
+  font-weight: 700;
+}
+
+button:focus {
+  background-color: red;
+}
+
+.reserved {
+  background-color: rgb(15, 121, 121);
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  width: 8%;
+  font-size: 13px;
 }
