@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-// import Missions from './missions';
+
 import './profile.css';
 
 const MyProfile = () => {

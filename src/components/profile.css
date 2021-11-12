@@ -3,16 +3,16 @@
   border: 1px solid rgb(29, 28, 28);
   margin: 20px 2% 0 0;
   color: black;
-  margin-top: -9px;
+  margin-top: -8px;
 }
 
 .display_list_r {
-    list-style-type: none;
-    border: 1px solid rgb(29, 28, 28);
-    margin: 20px 2% 0 0;
-    color: black;
-    margin-top: -1px;
-  }
+  list-style-type: none;
+  border: 1px solid rgb(29, 28, 28);
+  margin: 20px 2% 0 0;
+  color: black;
+  margin-top: -1px;
+}
 
 .myProfile {
   display: grid;
@@ -22,9 +22,13 @@
 }
 
 .display_rocket {
-    margin-top: 10px;
+  margin-top: 2.5rem;
+}
+
+.display_mission {
+  margin-top: 2.5rem;
 }
 
 .display_missions h2 {
-    margin-top: 0.2rem;
-} 
+  margin-top: 0.5rem;
+}
