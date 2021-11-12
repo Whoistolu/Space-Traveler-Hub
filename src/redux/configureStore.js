@@ -5,11 +5,12 @@ import {
 } from 'redux';
 import logger from 'redux-logger';
 import thunk from 'redux-thunk';
-import rocketReducer from './rockets/rockets';
 import { missionReducer } from './missions/missionReducer';
+import fetchApiRockets from '../components/rocketsApi';
+import rocketReducer, { getRockets } from './rockets/rockets';
 
 const reducer = combineReducers({
-  rocketReducer,
+  rockets: rocketReducer,
   missionReducer,
 });
 
@@ -18,5 +19,9 @@ const store = createStore(
 
   applyMiddleware(logger, thunk),
 );
+
+store.dispatch(getRockets());
+
+fetchApiRockets();
 
 export default store;

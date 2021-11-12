@@ -5,8 +5,8 @@ import {
 } from 'react-router-dom';
 import Header from './components/header';
 import MyProfile from './components/my_Profile';
-import Rockets from './components/rockets';
 import Missions from './components/missions';
+import RocketElement from './components/RocketElement';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
       <Header />
       <Switch>
         <Route exact path="/">
-          <Rockets />
+          <RocketElement />
         </Route>
         <Route path="/myProfile">
           <MyProfile />
