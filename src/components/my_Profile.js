@@ -7,6 +7,7 @@ const MyProfile = () => {
     <div>
       <div>
         <h2>My Missions</h2>
+        <h3>My Missions</h3>
         <table className="profile_table">
           <ul>
             {state.map((mission) => (
