@@ -1,10 +1,18 @@
-.display_list {
+.display_list_m {
   list-style-type: none;
   border: 1px solid rgb(29, 28, 28);
-  border-radius: 8px;
   margin: 20px 2% 0 0;
   color: black;
+  margin-top: -9px;
 }
+
+.display_list_r {
+    list-style-type: none;
+    border: 1px solid rgb(29, 28, 28);
+    margin: 20px 2% 0 0;
+    color: black;
+    margin-top: -1px;
+  }
 
 .myProfile {
   display: grid;
@@ -12,3 +20,11 @@
   grid-template-rows: repeat(2, 1fr);
   margin: 5px 2%;
 }
+
+.display_rocket {
+    margin-top: 10px;
+}
+
+.display_missions h2 {
+    margin-top: 0.2rem;
+} 

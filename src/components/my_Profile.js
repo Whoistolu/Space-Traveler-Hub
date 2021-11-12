@@ -16,18 +16,18 @@ const MyProfile = () => {
         >
           {state.map((mission) => (
             <li key={mission.id}>
-              {mission.join && <p className="display_list">{mission.name}</p>}
+              {mission.join && <p className="display_list_m">{mission.name}</p>}
             </li>
           ))}
         </ul>
       </div>
-      <div className="display_rockets">
+      <div className="rockets">
         <h2>My Rockets</h2>
         <div className="display_rocket">
           {rockets.filter((item) => item.reserved).map((data) => (
-            <div key={data.id} className="display_list">
+            <li key={data.id} className="display_list_r">
               {data.rocketName}
-            </div>
+            </li>
           ))}
         </div>
 
