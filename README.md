@@ -3,8 +3,6 @@
 A Prrojest that works on a real live datafrom the SpaceX API. A web application that provides commercial and scientific space travel services.
 The application allows users to book rockets and join selected space missions.
 
-## [Live Link]()
-
 ![Image](./img/r1.png)
 ![Image](./img/r2.png)
 ![Image](./img/r3.png)
