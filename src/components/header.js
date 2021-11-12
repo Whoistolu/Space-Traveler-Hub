@@ -1,29 +1,30 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function Header() {
   return (
     <header>
-      <div>
-        <img id="logo" src="https://cdn-icons-png.flaticon.com/512/3212/3212608.png" alt="" />
-        <h1>Space Travelers</h1>
-      </div>
-      <nav>
-        <div>
-          <ul>
-            <li>
-              <Link to="/" className="navLink">Rockets</Link>
-
-            </li>
-            <li>
-              <Link to="/myProfile" className="navLink"> My Profile</Link>
-            </li>
-            <li>
-              <Link to="/mission" className="navLink"> Missions</Link>
-            </li>
-          </ul>
+      <div className="header-container">
+        <div className="img-h1">
+          <img className="logo" id="logo" src="https://cdn-icons-png.flaticon.com/512/3212/3212608.png" alt="" />
+          <h1><NavLink to="/">Space Travelers&lsquo; Hub</NavLink></h1>
         </div>
-      </nav>
+        <nav>
+          <div className="links">
+            <ul>
+              <li>
+                <NavLink to="/" exact activeClassName="selected">Rockets</NavLink>
+              </li>
+              <li>
+                <NavLink to="/mission" activeClassName="selected"> Missions</NavLink>
+              </li>
+              <li>
+                <NavLink to="/myProfile" activeClassName="selected"> My Profile</NavLink>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
   );
 }

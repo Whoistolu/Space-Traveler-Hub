@@ -1,0 +1,78 @@
+.table_div {
+  margin: 50px;
+}
+
+.mission_table {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 3rem;
+  max-height: 700px;
+  overflow-y: scroll;
+  border-collapse: collapse;
+  border-bottom: 2px solid #d3d3d3;
+}
+
+td,
+th {
+  border: 2px solid black;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  vertical-align: top;
+  font-size: 20px;
+}
+
+tr {
+  color: black;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(199, 195, 195, 0.59);
+}
+
+tr:first-child > th {
+  color: rgb(2, 2, 2);
+  font-weight: bold;
+}
+
+.member_status {
+  background-color: rgba(0, 0, 0, 0.529);
+  border-radius: 7px;
+  padding: 0.5rem;
+  white-space: nowrap;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+}
+
+.description {
+  font-size: 18px;
+  opacity: 0.7;
+}
+
+.join-button,
+.leave-button {
+  white-space: nowrap;
+  padding: 0.5rem;
+  font-size: 18px;
+  width: 150px;
+  border-radius: 4px;
+  outline: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+
+.leave-button {
+  background: rgb(201, 197, 197);
+  color: rgb(192, 1, 1);
+  border: solid;
+}
+
+.join-button {
+  background: transparent;
+  color: gray;
+  border: solid black;
+}
