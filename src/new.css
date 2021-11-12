@@ -63,7 +63,7 @@ li a {
 }
 
 .img-container {
-  width: 10%;
+  width: 25%;
   padding-top: 2rem;
 }
 
@@ -87,8 +87,7 @@ li a {
   border-radius: 5px;
   text-align: center;
   text-decoration: none;
-  border: none;
-  width: 14%;
+  width: 17%;
   font-weight: 700;
 }
 
@@ -99,7 +98,7 @@ li a {
   border-radius: 5px;
   text-align: center;
   text-decoration: none;
-  width: 14%;
+  width: 20%;
   font-weight: 700;
   border: 2px solid #000;
 }

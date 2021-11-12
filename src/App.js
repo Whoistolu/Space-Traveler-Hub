@@ -20,7 +20,7 @@ function App() {
         <Route path="/myProfile">
           <MyProfile />
         </Route>
-        <Route path="/missions">
+        <Route path="/mission">
           <Missions />
         </Route>
       </Switch>

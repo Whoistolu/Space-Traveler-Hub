@@ -1,0 +1,14 @@
+.display_list {
+  list-style-type: none;
+  border: 1px solid rgb(29, 28, 28);
+  border-radius: 8px;
+  margin: 20px 2% 0 0;
+  color: black;
+}
+
+.myProfile {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: 5px 2%;
+}
