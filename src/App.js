@@ -8,7 +8,6 @@ import MyProfile from './components/my_Profile';
 import Missions from './components/missions';
 import RocketElement from './components/RocketElement';
 
-
 function App() {
   return (
     <>

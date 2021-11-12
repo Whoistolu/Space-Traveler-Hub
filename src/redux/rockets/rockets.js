@@ -5,6 +5,7 @@ const RESERVE_ROCKETS = 'nasa_projects/rockets/RESERVE_ROCKETS';
 const CANCEL_ROCKETS = 'nasa_projects/rockets//CANCEL_ROCKETS';
 const initialState = [];
 
+let loading = false;
 export const getRockets = () => async (dispatch) => {
   const theRockets = await fetchApiRockets();
   const mappedData = theRockets.map((rocket) => ({
@@ -13,13 +14,14 @@ export const getRockets = () => async (dispatch) => {
     description: rocket.description,
     flickrImages: rocket.flickr_images[0],
   }));
-
-  dispatch(
+  if (loading) return;
+  await dispatch(
     {
       type: GET_ROCKETS,
       payload: mappedData,
     },
   );
+  loading = true;
 };
 
 export const reserveRockets = (id) => ({

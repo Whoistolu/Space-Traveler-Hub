@@ -5,7 +5,6 @@ import SingleRocket from './SingleRockets';
 
 const RocketElement = () => {
   const dispatch = useDispatch();
-
   const rockets = useSelector((state) => state.rockets);
   useEffect(() => {
     dispatch(getRockets());

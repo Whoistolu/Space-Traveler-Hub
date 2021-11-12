@@ -69,7 +69,7 @@ li a {
 
 .selected {
   text-decoration: underline;
-  color: aqua;
+  color: red;
 }
 
 .description {
@@ -80,7 +80,7 @@ li a {
   gap: 0.8rem;
 }
 
-button {
+.blue {
   padding: 0.6rem;
   color: #fff;
   background-color: blue;
@@ -92,10 +92,16 @@ button {
   font-weight: 700;
 }
 
-button:focus {
+.white {
+  padding: 0.6rem;
+  color: #000;
   background-color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  width: 14%;
+  font-weight: 700;
   border: 2px solid #000;
-  color: rgb(82, 74, 74);
 }
 
 .reserved {

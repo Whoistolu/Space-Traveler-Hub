@@ -17,6 +17,7 @@ const SingleRocket = (prop) => {
       dispatch(reserveRockets(id));
     }
   };
+  const name = reserved ? 'white' : 'blue';
   return (
     <>
       <div className="all">
@@ -33,7 +34,7 @@ const SingleRocket = (prop) => {
                 description
               }
           </span>
-          <button onClick={() => reservedRocketStatus(id)} type="button">{status}</button>
+          <button className={name} onClick={() => reservedRocketStatus(id)} type="button">{status}</button>
         </div>
       </div>
     </>

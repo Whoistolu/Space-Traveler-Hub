@@ -7,19 +7,19 @@ function Header() {
       <div className="header-container">
         <div className="img-h1">
           <img className="logo" id="logo" src="https://cdn-icons-png.flaticon.com/512/3212/3212608.png" alt="" />
-          <h1><Link to="/">Space Travelers&lsquo; Hub</Link></h1>
+          <h1><NavLink to="/">Space Travelers&lsquo; Hub</NavLink></h1>
         </div>
         <nav>
           <div className="links">
             <ul>
               <li>
-                <Link to="/" activeClassName="selected">Rockets</Link>
+                <NavLink to="/" exact activeClassName="selected">Rockets</NavLink>
               </li>
               <li>
-                <Link to="/mission" activeClassName="selected"> Missions</Link>
+                <NavLink to="/mission" activeClassName="selected"> Missions</NavLink>
               </li>
               <li>
-                <Link to="/myProfile" activeClassName="selected"> My Profile</Link>
+                <NavLink to="/myProfile" activeClassName="selected"> My Profile</NavLink>
               </li>
             </ul>
           </div>
