@@ -3,14 +3,13 @@
 }
 
 .mission_table {
-    width: 80%;
-    margin-left: 0 40px 0 40px;
-    margin-top: 3rem;
-    max-height: 700px;
-    overflow-y: scroll;
-    border-collapse: collapse;
-    width: 100%;
-    border-bottom: 2px solid #d3d3d3;
+  width: 80%;
+  margin: 0 40px 0 40px;
+  margin-top: 3rem;
+  max-height: 700px;
+  overflow-y: scroll;
+  border-collapse: collapse;
+  border-bottom: 2px solid #d3d3d3;
 }
 
 td,
@@ -35,9 +34,8 @@ tr:nth-child(even) {
 
 tr:first-child > th {
   color: rgb(2, 2, 2);
-  font-size: bold;
+  font-weight: bold;
 }
-
 
 .member_status {
   background-color: rgba(0, 0, 0, 0.529);
