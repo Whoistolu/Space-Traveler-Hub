@@ -1,13 +1,24 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 
-const MyProfile = () => (
-  <div>
+const MyProfile = () => {
+  const state = useSelector((state) => state.missionReducer);
+  return (
     <div>
-      <p>Missions</p>
+      <div>
+        <h2>My Missions</h2>
+        <table className="profile_table">
+          <ul>
+            {state.map((mission) => (
+              <li key={mission.id}>
+                <p>{mission.name}</p>
+              </li>
+            ))}
+          </ul>
+        </table>
+      </div>
     </div>
-    <div>
-      <p>Rockets</p>
-    </div>
-  </div>
-);
+  );
+};
+
 export default MyProfile;
