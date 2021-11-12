@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2.5rem;
+  border-bottom: rgb(172, 168, 168) solid 1px;
+}
+
+.all {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.img-h1 {
+  display: flex;
+  gap: 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  width: 7%;
+}
+
+h1 {
+  display: flex;
+  justify-self: center;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+h1 a {
+  text-decoration: none;
+}
+
+.rocket-name {
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  text-decoration: none;
+}
+
+li {
+  padding: 0 1rem;
+  font-size: 1.3rem;
+  list-style-type: none;
+  color: rgb(22, 61, 238);
+  margin-top: 0.5rem;
+}
+
+li a {
+  text-decoration: none;
+}
+
+.img-container {
+  width: 10%;
+  padding-top: 2rem;
+}
+
+.selected {
+  text-decoration: underline;
+  color: aqua;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  width: 60%;
+  gap: 0.8rem;
+}
+
+button {
+  padding: 0.6rem;
+  color: #fff;
+  background-color: blue;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  width: 14%;
+  font-weight: 700;
+}
+
+button:focus {
+  background-color: #fff;
+  border: 2px solid #000;
+  color: rgb(82, 74, 74);
+}
+
+.reserved {
+  background-color: rgb(15, 121, 121);
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  width: 8%;
+  font-size: 13px;
+}
