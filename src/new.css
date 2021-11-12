@@ -15,6 +15,7 @@
   display: flex;
   gap: 3rem;
   justify-content: center;
+  width: 100%;
 }
 
 .img-h1 {
@@ -66,8 +67,9 @@ li a {
   padding-top: 2rem;
 }
 
-.active {
+.selected {
   text-decoration: underline;
+  color: aqua;
 }
 
 .description {
@@ -91,7 +93,9 @@ button {
 }
 
 button:focus {
-  background-color: red;
+  background-color: #fff;
+  border: 2px solid #000;
+  color: rgb(82, 74, 74);
 }
 
 .reserved {

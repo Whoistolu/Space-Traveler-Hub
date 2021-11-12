@@ -13,13 +13,13 @@ function Header() {
           <div className="links">
             <ul>
               <li>
-                <Link to="/" activeClassName="active">Rockets</Link>
+                <Link to="/" activeClassName="selected">Rockets</Link>
               </li>
               <li>
-                <Link to="/mission" activeClassName="active"> Missions</Link>
+                <Link to="/mission" activeClassName="selected"> Missions</Link>
               </li>
               <li>
-                <Link to="/myProfile" activeClassName="active"> My Profile</Link>
+                <Link to="/myProfile" activeClassName="selected"> My Profile</Link>
               </li>
             </ul>
           </div>
