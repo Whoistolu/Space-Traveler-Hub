@@ -18,19 +18,21 @@ function Missions() {
   }, []);
   console.log(state);
   return (
-    <table className="mission_table">
-      <tbody>
-        <tr>
-          <th>Mission</th>
-          <th>description</th>
-          <th>Status</th>
-          <th />
-        </tr>
-        {state.map((mission) => (
-          <Mission key={mission.id} mission={mission} />
-        ))}
-      </tbody>
-    </table>
+    <div className="table_div">
+      <table className="mission_table">
+        <tbody>
+          <tr>
+            <th>Mission</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th />
+          </tr>
+          {state.map((mission) => (
+            <Mission key={mission.id} mission={mission} />
+          ))}
+        </tbody>
+      </table>
+    </div>
   );
 }
 

@@ -15,9 +15,9 @@ const Mission = ({ mission }) => {
   };
 
   const memberStyle = {
-    backgroundColor: '#000',
+    backgroundColor: 'blue',
     fontSize: '16px',
-    color: 'red',
+    color: 'white',
   };
 
   return (
@@ -26,7 +26,7 @@ const Mission = ({ mission }) => {
       <td>{description}</td>
       <td>
         <p className="member_status" style={join ? memberStyle : null}>
-          {join ? 'Active Member' : 'Join Mission'}
+          {join ? 'Active Member' : 'NOT A MEMBER'}
         </p>
       </td>
       <td>

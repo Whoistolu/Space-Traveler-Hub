@@ -33,7 +33,6 @@ const LeaveMissions = (payload) => (
 const missionReducer = (state = initialState, action) => {
   switch (action.type) {
     case GET_MISSIONS:
-      console.log(action.payload);
       return [...state, ...action.payload];
 
     case JOIN_MISSIONS:

@@ -1,7 +1,10 @@
+.table_div {
+  margin: 50px;
+}
+
 .mission_table {
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0 40px 0 40px;
     margin-top: 3rem;
     max-height: 700px;
     overflow-y: scroll;
@@ -26,6 +29,16 @@ tr {
   color: black;
 }
 
+tr:nth-child(even) {
+  background-color: rgba(199, 195, 195, 0.59);
+}
+
+tr:first-child > th {
+  color: rgb(2, 2, 2);
+  font-size: bold;
+}
+
+
 .member_status {
   background-color: rgba(0, 0, 0, 0.529);
   border-radius: 7px;
@@ -42,7 +55,7 @@ tr {
   opacity: 0.7;
 }
 
-.join-botton,
+.join-button,
 .leave-button {
   white-space: nowrap;
   padding: 0.5rem;
@@ -54,12 +67,14 @@ tr {
   cursor: pointer;
 }
 
-.join-button {
-  background: rgb(192, 1, 1);
-  color: #fff;
+.leave-button {
+  background: rgb(201, 197, 197);
+  color: rgb(192, 1, 1);
+  border: solid;
 }
 
-.leavebutton {
-  background: #fff;
-  color: rgb(192, 1, 1);
+.join-button {
+  background: transparent;
+  color: gray;
+  border: solid black;
 }
