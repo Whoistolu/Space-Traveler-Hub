@@ -4,7 +4,7 @@
 
 .mission_table {
   width: 80%;
-  margin: 0 40px 0 40px;
+  margin: 0 auto;
   margin-top: 3rem;
   max-height: 700px;
   overflow-y: scroll;
