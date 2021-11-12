@@ -44,7 +44,7 @@ Mission.propTypes = {
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
-    join: PropTypes.string.isRequired,
+    join: PropTypes.bool.isRequired,
   }).isRequired,
 };
 

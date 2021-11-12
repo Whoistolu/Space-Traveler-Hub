@@ -1,14 +1,9 @@
-import { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { getRockets } from '../redux/rockets/rockets';
+import { useSelector } from 'react-redux';
+
 import SingleRocket from './SingleRockets';
 
 const RocketElement = () => {
-  const dispatch = useDispatch();
   const rockets = useSelector((state) => state.rockets);
-  useEffect(() => {
-    dispatch(getRockets());
-  }, []);
   return (
     <>
       {

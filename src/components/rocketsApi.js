@@ -5,7 +5,6 @@ const fetchApiRockets = async () => {
     method: 'GET',
   });
   const result = await response.json();
-  // console.log(result);
   return result;
 };
 

@@ -47,22 +47,18 @@ const missionReducer = (state = initialState, action) => {
 // Thunks
 export const loadMisionsThunk = () => (
   async (dispatch) => {
-    try {
-      const req = await axios
-        .get('https://api.spacexdata.com/v3/missions?limit=10')
-        .then((response) => {
-          const data = response.data.map((item) => ({
-            name: item.mission_name,
-            id: item.mission_id,
-            description: item.description,
-            join: false,
-          }));
-          return data;
-        });
-      dispatch(getMissions(req));
-    } catch (e) {
-      console.log(e);
-    }
+    const req = await axios
+      .get('https://api.spacexdata.com/v3/missions?limit=10')
+      .then((response) => {
+        const data = response.data.map((item) => ({
+          name: item.mission_name,
+          id: item.mission_id,
+          description: item.description,
+          join: false,
+        }));
+        return data;
+      });
+    dispatch(getMissions(req));
   }
 );
 
