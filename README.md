@@ -1,6 +1,7 @@
 # Space Travellers' Hub
 
-> A simple ReactJS Todo project
+A Prrojest that works on a real live datafrom the SpaceX API. A web application that provides commercial and scientific space travel services.
+The application allows users to book rockets and join selected space missions.
 
 ## [Live Link]()
 
