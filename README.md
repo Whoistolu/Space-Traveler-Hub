@@ -24,9 +24,9 @@ https://github.com/Whoistolu/Space-Traveler-Hub
 
 ```
 
-`npm install`
-
 ### Install
+
+`npm install`
 
 ### Usage
 
