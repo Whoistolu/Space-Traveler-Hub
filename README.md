@@ -8,6 +8,9 @@ The application allows users to book rockets and join selected space missions.
 ![Image](./img/r3.png)
 ![Image](./img/test.png)
 
+
+[Live Link](https://trusting-poitras-39fd6a.netlify.app/)
+
 ## Built With
 
 - ReactJS
