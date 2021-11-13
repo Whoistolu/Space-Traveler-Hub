@@ -4,7 +4,6 @@ A Prrojest that works on a real live datafrom the SpaceX API. A web application 
 The application allows users to book rockets and join selected space missions.
 
 [Live Link](https://trusting-poitras-39fd6a.netlify.app/)
-
 ![Image](./img/r1.png)
 ![Image](./img/r2.png)
 ![Image](./img/r3.png)
