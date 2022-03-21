@@ -1,6 +1,6 @@
 # Space Travellers' Hub
 
-A Prrojest that works on a real live datafrom the SpaceX API. A web application that provides commercial and scientific space travel services.
+A Projest that works on a real live datafrom the SpaceX API. A web application that provides commercial and scientific space travel services.
 The application allows users to book rockets and join selected space missions.
 
 ![Image](./img/r1.png)
